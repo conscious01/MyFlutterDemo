@@ -15,6 +15,7 @@ import 'package:my_flutter_demos/page/padding_page.dart';
 import 'package:my_flutter_demos/page/practice_1_page.dart';
 import 'package:my_flutter_demos/page/practice_2_page.dart';
 import 'package:my_flutter_demos/page/practice_3_page.dart';
+import 'package:my_flutter_demos/page/practice_4_page.dart';
 import 'package:my_flutter_demos/page/row_page.dart';
 import 'package:my_flutter_demos/page/scaffold_page.dart';
 import 'package:my_flutter_demos/page/stack_page.dart';
@@ -155,6 +156,8 @@ class AppRountes {
     GetPage(name: practice_1, page: () => Practice1Page()),
     GetPage(name: practice_2, page: () => Practice2Page()),
     GetPage(name: practice_3, page: () => Practice3Page()),
+    GetPage(name: practice_4, page: () => Practice4Page()),
+
 
     GetPage(name: weekDemo1, page: () => Week1()),
     GetPage(name: weekDemo2, page: () => Week2()),
