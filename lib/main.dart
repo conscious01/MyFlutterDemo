@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_flutter_demos/controller/home_controller.dart';
+import 'package:my_flutter_demos/controller/use_get_controller.dart';
 import 'package:my_flutter_demos/controller/week_demo_controller.dart';
 import 'package:my_flutter_demos/page/basic_widget_page.dart';
 import 'package:my_flutter_demos/page/bottom_navigation_bar_page.dart';
+import 'package:my_flutter_demos/page/buttons_page.dart';
 import 'package:my_flutter_demos/page/center_page.dart';
 import 'package:my_flutter_demos/page/colum_page.dart';
 import 'package:my_flutter_demos/page/container_page.dart';
@@ -11,6 +13,7 @@ import 'package:my_flutter_demos/page/expaned_page.dart';
 import 'package:my_flutter_demos/page/grid_view_page.dart';
 import 'package:my_flutter_demos/page/image_page.dart';
 import 'package:my_flutter_demos/page/list_view_page.dart';
+import 'package:my_flutter_demos/page/network_page.dart';
 import 'package:my_flutter_demos/page/padding_page.dart';
 import 'package:my_flutter_demos/page/practice_1_page.dart';
 import 'package:my_flutter_demos/page/practice_2_page.dart';
@@ -19,9 +22,11 @@ import 'package:my_flutter_demos/page/practice_4_page.dart';
 import 'package:my_flutter_demos/page/row_page.dart';
 import 'package:my_flutter_demos/page/scaffold_page.dart';
 import 'package:my_flutter_demos/page/stack_page.dart';
+import 'package:my_flutter_demos/page/states_management_page.dart';
 import 'package:my_flutter_demos/page/tab_bar_page.dart';
 import 'package:my_flutter_demos/page/text_field_page.dart';
 import 'package:my_flutter_demos/page/text_page.dart';
+import 'package:my_flutter_demos/page/use_get_page.dart';
 import 'package:my_flutter_demos/page/week_demo_page.dart';
 import 'package:my_flutter_demos/weeks_demo/week10_table.dart';
 import 'package:my_flutter_demos/weeks_demo/week11_sliver_app_bar.dart';
@@ -65,6 +70,7 @@ class AppRountes {
   static const String scaffoldAppBar = '/scaffoldAppBar';
   static const String text = '/Text';
   static const String textField = '/TextField';
+  static const String buttons = '/buttons';
   static const String image = '/Image';
   static const String container = '/Container';
   static const String padding = '/Padding';
@@ -115,6 +121,11 @@ class AppRountes {
   static const String weekDemo30 = '/weekDemo30';
   static const String weekDemo31 = '/weekDemo31';
 
+  static const String network = '/network';
+  static const String statesManagement = '/statesManagement';
+  static const String useGet = '/useGet';
+
+
   static final List<GetPage> pages = [
     GetPage(
       name: home,
@@ -142,6 +153,7 @@ class AppRountes {
     GetPage(name: text, page: () => TextPage()),
     GetPage(name: textField, page: () => TextFieldPage()),
     GetPage(name: image, page: () => ImagePage()),
+    GetPage(name: buttons, page: () => ButtonsPage()),
     GetPage(name: container, page: () => ContainerPage()),
     GetPage(name: padding, page: () => PaddingPage()),
     GetPage(name: center, page: () => CenterPage()),
@@ -192,6 +204,17 @@ class AppRountes {
     GetPage(name: weekDemo29, page: () => Week29()),
     GetPage(name: weekDemo30, page: () => Week30()),
     GetPage(name: weekDemo31, page: () => Week31()),
+
+    GetPage(name: network, page: () => NetworkPage()),
+    GetPage(name: statesManagement, page: () => StatesManagementPage()),
+    GetPage(
+      name: useGet,
+      page: () => UseGetPage(),
+      binding: BindingsBuilder(() {
+        Get.lazyPut<UseGetController>(() => UseGetController());
+      }),
+    ),
+
   ];
 }
 

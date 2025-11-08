@@ -2,8 +2,8 @@
 class Assets {
   Assets._();
 
+  static const String assetsMyimage = 'assets/myimage.jpg';
   static const String imagesFunWithLights = 'assets/images/fun_with_lights.png';
   static const String imagesLake = 'assets/images/lake.jpeg';
-  static const String imagesMyimage = 'assets/images/myimage.jpg';
 
 }

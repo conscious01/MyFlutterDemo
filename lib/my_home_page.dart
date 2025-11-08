@@ -9,7 +9,7 @@ import 'app_colors.dart';
 
 class MyHomePage extends GetView<HomeController> {
 
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

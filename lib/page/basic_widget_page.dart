@@ -16,7 +16,6 @@ class BasicWidgetPage extends GetView<BasicWidgetController> {
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: GridView.builder(
-
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 12.0,

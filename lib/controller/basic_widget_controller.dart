@@ -13,6 +13,7 @@ class BasicWidgetController extends GetxController {
     DemoEntry(title: 'Scaffold-AppBar', routeName: AppRountes.scaffoldAppBar),
     DemoEntry(title: 'Text/RichText', routeName: AppRountes.text),
     DemoEntry(title: 'TextField', routeName: AppRountes.textField),
+    DemoEntry(title: 'Buttons', routeName: AppRountes.buttons),
     DemoEntry(title: 'Image', routeName: AppRountes.image),
     DemoEntry(title: 'Container', routeName: AppRountes.container),
     DemoEntry(title: 'Padding', routeName: AppRountes.padding),
